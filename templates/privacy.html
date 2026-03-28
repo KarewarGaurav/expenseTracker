@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}
+Privacy Policy
+{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+.privacy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.privacy-section {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+.privacy-text {
+  font-size: 1.1rem;
+}
+</style>
+{% endblock %}
+{% block content %}
+<section class="hero" style="text-align: center; padding: 4rem 1rem 2rem;">
+  <h1>Privacy Policy</h1>
+  <p>We are committed to protecting your personal information.</p>
+</section>
+
+<section class="privacy-content">
+  <div class="privacy-section"><h3>Data We Collect</h3><p>We collect transaction data, account information, and usage statistics to provide and improve our services.</p></div>
+  <div class="privacy-section"><h3>How We Use Your Data</h3><p>We use your data to track expenses, generate insights, and personalize your experience.</p></div>
+  <div class="privacy-section"><h3>Data Storage</h3><p>Your data is stored securely on encrypted cloud servers.</p></div>
+  <div class="privacy-section"><h3>Third Party Services</h3><p>We use trusted third party services for analytics and hosting, which may process your data.</p></div>
+  <div class="privacy-section"><h3>Contact Us</h3><p>For privacy inquiries, contact us at privacy@spendly.app.</p></div>
+</section>
+{% endblock %}
