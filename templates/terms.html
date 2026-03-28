@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}
+Terms and Conditions
+{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+.terms-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.terms-section {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+.terms-text {
+  font-size: 1.1rem;
+}
+</style>
+{% endblock %}
+{% block content %}
+<section class="hero" style="text-align: center; padding: 4rem 1rem 2rem;">
+  <h1>Terms and Conditions</h1>
+  <p>Please review our terms of service before using Spendly.</p>
+</section>
+
+<section class="terms-content">
+  <div class="terms-section"><h3>Acceptance of Terms</h3><p>By using Spendly, you agree to our terms of service and privacy policy.</p></div>
+  <div class="terms-section"><h3>Use of Service</h3><p>You may use our app for personal finance tracking, but we prohibit commercial use or resale.</p></div>
+  <div class="terms-section"><h3>User Data</h3><p>We collect transaction data to provide our services. Your data is encrypted and not shared with third parties without consent.</p></div>
+  <div class="terms-section"><h3>Limitations of Liability</h3><p>We are not liable for financial decisions made using our app or data interpretation errors.</p></div>
+  <div class="terms-section"><h3>Changes to Terms</h3><p>We reserve the right to modify these terms with 30 days notice.</p></div>
+</section>
+{% endblock %}
